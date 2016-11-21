@@ -6,7 +6,7 @@
 /*   By: apellicc <apellicc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/02 16:36:33 by apellicc          #+#    #+#             */
-/*   Updated: 2016/03/29 15:35:37 by apellicc         ###   ########.fr       */
+/*   Updated: 2016/11/21 00:54:18 by apellicc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
-
 
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
@@ -118,6 +117,5 @@ char				*ft_convert(long long int n, int base, char *str, int i);
 char				*ft_uitoa_base(unsigned long long nb, int base);
 int					ft_wcharlen(wchar_t value);
 int					ft_swcharlen(wchar_t *value);
-
 
 #endif

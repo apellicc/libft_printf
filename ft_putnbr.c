@@ -6,13 +6,13 @@
 /*   By: apellicc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 23:33:22 by apellicc          #+#    #+#             */
-/*   Updated: 2015/12/01 23:33:36 by apellicc         ###   ########.fr       */
+/*   Updated: 2016/11/20 19:55:57 by apellicc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void				ft_putnbr(int c)
+void	ft_putnbr(int c)
 {
-		ft_putnbr_fd(c, 1);
+	ft_putnbr_fd(c, 1);
 }

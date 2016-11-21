@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putwchar.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: apellicc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/20 20:08:50 by apellicc          #+#    #+#             */
+/*   Updated: 2016/11/20 20:09:04 by apellicc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static void	ft_putwchar3(unsigned int v, int *i)
@@ -54,7 +66,7 @@ static void	ft_putwchar1(unsigned int v, int *i)
 	*i += write(1, &octet, 1);
 }
 
-int		ft_putwchar(wchar_t value)
+int			ft_putwchar(wchar_t value)
 {
 	int				i;
 	unsigned int	v;

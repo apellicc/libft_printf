@@ -1,5 +1,16 @@
-#include "ft_printf.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf_specifier.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: apellicc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/20 20:06:22 by apellicc          #+#    #+#             */
+/*   Updated: 2016/11/20 20:07:25 by apellicc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "ft_printf.h"
 
 void	ft_is_d(int *i, t_en *bin)
 {
@@ -16,13 +27,13 @@ void	ft_is_s(int *i, t_en *bin)
 	char	*str;
 	int		tmp;
 
-		str = va_arg(bin->a, char *);
-		str ? tmp = ft_strlen(str) : 0;
-		if (!str)
-			bin->ret += ft_putstr("(null)");
-		else
-				bin->ret += ft_putstr(str);
-		*i = *i + 1;
+	str = va_arg(bin->a, char *);
+	str ? tmp = ft_strlen(str) : 0;
+	if (!str)
+		bin->ret += ft_putstr("(null)");
+	else
+		bin->ret += ft_putstr(str);
+	*i = *i + 1;
 }
 
 void	ft_is_p(int *i, t_en *bin)
@@ -45,7 +56,6 @@ void	ft_is_x(int *i, t_en *bin)
 
 	nb = va_arg(bin->a, long long int);
 	tmp = ft_itoa_base(nb, 16);
-
 	if (nb != 0)
 	{
 		bin->ret += ft_putstr(tmp);

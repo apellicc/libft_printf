@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_wcharlen.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: apellicc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/21 00:53:46 by apellicc          #+#    #+#             */
+/*   Updated: 2016/11/21 00:55:31 by apellicc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static void	ft_wcharlen3(unsigned int v, int *i)
@@ -54,7 +66,7 @@ static void	ft_wcharlen1(unsigned int v, int *i)
 	*i += 1;
 }
 
-int		ft_wcharlen(wchar_t value)
+int			ft_wcharlen(wchar_t value)
 {
 	int				i;
 	unsigned int	v;
